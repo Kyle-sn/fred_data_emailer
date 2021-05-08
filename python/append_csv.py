@@ -21,4 +21,6 @@ def append_csv_as_row(source_file, new_file):
             for row in fileReader:
                 fileWriter.writerow(row)
 
+    print(f'Appended {new_file} to {source_file}')
+
 append_csv_as_row(args.source_file, args.new_file)

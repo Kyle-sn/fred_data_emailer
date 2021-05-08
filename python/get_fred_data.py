@@ -17,6 +17,10 @@ os.chdir(os.path.expanduser('~/data/fred_data'))
 def get_fred_data(symbol, file_name, start_date, end_date):
     
     data = pdr.FredReader(symbol, start_date, end_date).read()
+    if start_date == end_date:
+        print(f'Downloading {symbol} FRED data for date {end_date}')
+    
     data.to_csv(file_name)
+    print(f'Saving data  to ~/data/fred_data/{file_name}')
 
 get_fred_data(args.symbol, args.file_name, args.start_date, args.end_date)  
