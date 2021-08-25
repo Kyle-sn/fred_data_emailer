@@ -53,5 +53,6 @@ def tabulate_dict(symbol):
     file.close()
     print(f'Writing the summary data to ~/data/fred_data/{symbol}_table.txt')
 
-calculation(args.symbol)
-tabulate_dict(args.symbol)
+def main():
+    calculation(args.symbol)
+    tabulate_dict(args.symbol)
