@@ -1,5 +1,5 @@
 # Fred Data Emailer
-The scripts included in this repo coupled with cron jobs will allow the user to progromatically send routine summary emails of data provided by [FRED](https://fred.stlouisfed.org/) to themselves. The end result is a table line the one seen below.
+The scripts included in this repo coupled with cron jobs will allow the user to progromatically send routine summary emails of data provided by [FRED](https://fred.stlouisfed.org/) to themselves. The end result is a table like the one seen below.
 ```
 ╒═════════════════╤════════════╕
 │ Date            │ 2021-03-01 │
